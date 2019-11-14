@@ -1,7 +1,10 @@
 package guru.springframework.spring5receipeapp.domain;
 
+import lombok.*;
+
 import javax.persistence.*;
 
+@Data
 @Entity
 public class Notes {
 
@@ -12,19 +15,4 @@ public class Notes {
     private Recipe recipe;
     private String recipeNote;
 
-    public Recipe getRecipe() {
-        return recipe;
-    }
-
-    public void setRecipe(Recipe recipe) {
-        this.recipe = recipe;
-    }
-
-    public String getRecipeNote() {
-        return recipeNote;
-    }
-
-    public void setRecipeNote(String recipeNote) {
-        this.recipeNote = recipeNote;
-    }
 }
